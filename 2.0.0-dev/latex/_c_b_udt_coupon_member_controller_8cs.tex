@@ -1,0 +1,44 @@
+\hypertarget{_c_b_udt_coupon_member_controller_8cs}{}\section{C\+:/\+Users/dwkim/\+Documents/\+Git\+Hub/\+Cloud\+Bread/\+Cloud\+Bread/\+Controllers/\+C\+B\+Udt\+Coupon\+Member\+Controller.cs File Reference}
+\label{_c_b_udt_coupon_member_controller_8cs}\index{C\+:/\+Users/dwkim/\+Documents/\+Git\+Hub/\+Cloud\+Bread/\+Cloud\+Bread/\+Controllers/\+C\+B\+Udt\+Coupon\+Member\+Controller.\+cs@{C\+:/\+Users/dwkim/\+Documents/\+Git\+Hub/\+Cloud\+Bread/\+Cloud\+Bread/\+Controllers/\+C\+B\+Udt\+Coupon\+Member\+Controller.\+cs}}
+
+
+Update Member\+Items and Coupon\+Member table by using coupon. ~\newline
+\char`\"{}\+Dupe\+Y\+N\char`\"{} value is set \char`\"{}\+Y\char`\"{}, multiple members can use this coupon. \char`\"{}\+Dupe\+Y\+N\char`\"{} value is set \char`\"{}\+N\char`\"{}, only one member can use it. -\/ set \char`\"{}\+Delete\+Y\+N\char`\"{} to \char`\"{}\+Y\char`\"{}.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_cloud_bread_1_1_controllers_1_1_c_b_udt_coupon_member_controller}{Cloud\+Bread.\+Controllers.\+C\+B\+Udt\+Coupon\+Member\+Controller}
+\item 
+class \hyperlink{class_cloud_bread_1_1_controllers_1_1_c_b_udt_coupon_member_controller_1_1_input_params}{Cloud\+Bread.\+Controllers.\+C\+B\+Udt\+Coupon\+Member\+Controller.\+Input\+Params}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Update Member\+Items and Coupon\+Member table by using coupon. ~\newline
+\char`\"{}\+Dupe\+Y\+N\char`\"{} value is set \char`\"{}\+Y\char`\"{}, multiple members can use this coupon. \char`\"{}\+Dupe\+Y\+N\char`\"{} value is set \char`\"{}\+N\char`\"{}, only one member can use it. -\/ set \char`\"{}\+Delete\+Y\+N\char`\"{} to \char`\"{}\+Y\char`\"{}. 
+
+\begin{DoxyAuthor}{Author}
+Dae Woo Kim 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Insert\+O\+R\+Update -\/ if itemid exists in memberitem inventory, then \char`\"{}\+U\+P\+D\+A\+T\+E\char`\"{}. if not, \char`\"{}\+I\+N\+S\+E\+R\+T\char`\"{}. \\
+\hline
+{\em Member\+Items} & object \\
+\hline
+{\em Coupon\+Member} & object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string \char`\"{}2\char`\"{} or \char`\"{}3\char`\"{} -\/ affected rows. 2 or 3 is depend on \char`\"{}\+Dupe\+Y\+N\char`\"{} value. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+usp\+Udt\+Coupon\+Member SP, Behavior\+ID \+: B15 
+\end{DoxySeeAlso}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000015}{Todo}]change SP to upsert auto method \end{DoxyRefDesc}

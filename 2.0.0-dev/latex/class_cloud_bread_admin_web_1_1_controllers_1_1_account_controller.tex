@@ -1,0 +1,93 @@
+\hypertarget{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller}{}\section{Cloud\+Bread\+Admin\+Web.\+Controllers.\+Account\+Controller Class Reference}
+\label{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller}\index{Cloud\+Bread\+Admin\+Web.\+Controllers.\+Account\+Controller@{Cloud\+Bread\+Admin\+Web.\+Controllers.\+Account\+Controller}}
+Inheritance diagram for Cloud\+Bread\+Admin\+Web.\+Controllers.\+Account\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Challenge\+Result}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Account\+Controller} (\hyperlink{class_cloud_bread_admin_web_1_1_application_user_manager}{Application\+User\+Manager} user\+Manager, \hyperlink{class_cloud_bread_admin_web_1_1_application_sign_in_manager}{Application\+Sign\+In\+Manager} sign\+In\+Manager)\hypertarget{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_a5985eb6e4a4ae7f4c874b1ccfba84c17}{}\label{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_a5985eb6e4a4ae7f4c874b1ccfba84c17}
+
+\item 
+Action\+Result {\bfseries Login} (string return\+Url)\hypertarget{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_a485bbeac01f2851f9c01803af4319301}{}\label{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_a485bbeac01f2851f9c01803af4319301}
+
+\item 
+async Task$<$ Action\+Result $>$ {\bfseries Login} (\hyperlink{class_cloud_bread_admin_web_1_1_models_1_1_login_view_model}{Login\+View\+Model} model, string return\+Url)\hypertarget{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_a26f5730053d2744a182135c0921104fb}{}\label{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_a26f5730053d2744a182135c0921104fb}
+
+\item 
+async Task$<$ Action\+Result $>$ {\bfseries Verify\+Code} (string provider, string return\+Url, bool remember\+Me)\hypertarget{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_a3aec70c240231aa01c2382636508129d}{}\label{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_a3aec70c240231aa01c2382636508129d}
+
+\item 
+async Task$<$ Action\+Result $>$ {\bfseries Verify\+Code} (\hyperlink{class_cloud_bread_admin_web_1_1_models_1_1_verify_code_view_model}{Verify\+Code\+View\+Model} model)\hypertarget{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_a039a7401f9ec43263c2bc04509244fce}{}\label{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_a039a7401f9ec43263c2bc04509244fce}
+
+\item 
+Action\+Result {\bfseries Register} ()\hypertarget{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_a432c910f111e765a65da14282a223b23}{}\label{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_a432c910f111e765a65da14282a223b23}
+
+\item 
+async Task$<$ Action\+Result $>$ {\bfseries Register} (\hyperlink{class_cloud_bread_admin_web_1_1_models_1_1_register_view_model}{Register\+View\+Model} model)\hypertarget{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_aabe75cc491c52635d865e972992cf1d9}{}\label{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_aabe75cc491c52635d865e972992cf1d9}
+
+\item 
+async Task$<$ Action\+Result $>$ {\bfseries Confirm\+Email} (string user\+Id, string code)\hypertarget{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_a72e5d1891d8ecfd314e94e5c1b087da1}{}\label{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_a72e5d1891d8ecfd314e94e5c1b087da1}
+
+\item 
+Action\+Result {\bfseries Forgot\+Password} ()\hypertarget{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_aec786f07cb6404c6c604f8bdb0ebf146}{}\label{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_aec786f07cb6404c6c604f8bdb0ebf146}
+
+\item 
+async Task$<$ Action\+Result $>$ {\bfseries Forgot\+Password} (\hyperlink{class_cloud_bread_admin_web_1_1_models_1_1_forgot_password_view_model}{Forgot\+Password\+View\+Model} model)\hypertarget{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_a00ae9dd6283bd55904b623116df807d5}{}\label{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_a00ae9dd6283bd55904b623116df807d5}
+
+\item 
+Action\+Result {\bfseries Forgot\+Password\+Confirmation} ()\hypertarget{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_ae147dc905e1ffa42024972baea8eafe7}{}\label{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_ae147dc905e1ffa42024972baea8eafe7}
+
+\item 
+Action\+Result {\bfseries Reset\+Password} (string code)\hypertarget{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_a2e497c6b396e8aaaf8ae980c8af75147}{}\label{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_a2e497c6b396e8aaaf8ae980c8af75147}
+
+\item 
+async Task$<$ Action\+Result $>$ {\bfseries Reset\+Password} (\hyperlink{class_cloud_bread_admin_web_1_1_models_1_1_reset_password_view_model}{Reset\+Password\+View\+Model} model)\hypertarget{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_aed92611d92bc62645f198738b2559576}{}\label{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_aed92611d92bc62645f198738b2559576}
+
+\item 
+Action\+Result {\bfseries Reset\+Password\+Confirmation} ()\hypertarget{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_a6ef5f5129df81ea7eedf82cdece7d2d2}{}\label{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_a6ef5f5129df81ea7eedf82cdece7d2d2}
+
+\item 
+Action\+Result {\bfseries External\+Login} (string provider, string return\+Url)\hypertarget{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_a7635a2faadc86831237f200498f7a419}{}\label{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_a7635a2faadc86831237f200498f7a419}
+
+\item 
+async Task$<$ Action\+Result $>$ {\bfseries Send\+Code} (string return\+Url, bool remember\+Me)\hypertarget{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_a1a8d7f86ccd6078b9249087d87a6da9a}{}\label{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_a1a8d7f86ccd6078b9249087d87a6da9a}
+
+\item 
+async Task$<$ Action\+Result $>$ {\bfseries Send\+Code} (\hyperlink{class_cloud_bread_admin_web_1_1_models_1_1_send_code_view_model}{Send\+Code\+View\+Model} model)\hypertarget{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_a99dab3cb95c5b5475322f578702ebaa5}{}\label{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_a99dab3cb95c5b5475322f578702ebaa5}
+
+\item 
+async Task$<$ Action\+Result $>$ {\bfseries External\+Login\+Callback} (string return\+Url)\hypertarget{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_a5760207883e656b3dd51d09e1883fe1a}{}\label{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_a5760207883e656b3dd51d09e1883fe1a}
+
+\item 
+async Task$<$ Action\+Result $>$ {\bfseries External\+Login\+Confirmation} (\hyperlink{class_cloud_bread_admin_web_1_1_models_1_1_external_login_confirmation_view_model}{External\+Login\+Confirmation\+View\+Model} model, string return\+Url)\hypertarget{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_acdf7512b03daeacb9ab9b8eaf3399ed0}{}\label{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_acdf7512b03daeacb9ab9b8eaf3399ed0}
+
+\item 
+Action\+Result {\bfseries Log\+Off} ()\hypertarget{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_a5fd1abcf376de86b70209e770cbb5bca}{}\label{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_a5fd1abcf376de86b70209e770cbb5bca}
+
+\item 
+Action\+Result {\bfseries External\+Login\+Failure} ()\hypertarget{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_a4553fc1091db8e6a23cf05a80beca438}{}\label{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_a4553fc1091db8e6a23cf05a80beca438}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cloud_bread_admin_web_1_1_application_user_manager}{Application\+User\+Manager} {\bfseries User\+Manager}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}\hypertarget{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_a6afd7b8108ddbf88909d4d7d85f22e7d}{}\label{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_a6afd7b8108ddbf88909d4d7d85f22e7d}
+
+\item 
+\hyperlink{class_cloud_bread_admin_web_1_1_application_sign_in_manager}{Application\+Sign\+In\+Manager} {\bfseries Sign\+In\+Manager}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}\hypertarget{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_af6e2b39dcd4e452ffafac3b7b11dfe13}{}\label{class_cloud_bread_admin_web_1_1_controllers_1_1_account_controller_af6e2b39dcd4e452ffafac3b7b11dfe13}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/dwkim/\+Documents/\+Git\+Hub/\+Cloud\+Bread/\+Cloud\+Bread\+Admin\+Web/\+Controllers/Account\+Controller.\+cs\end{DoxyCompactItemize}
