@@ -1,0 +1,132 @@
+\hypertarget{dir_8443004f7b07f99b4fb8d5c380b27b12}{}\section{Cloud\+Bread/\+Controllers Directory Reference}
+\label{dir_8443004f7b07f99b4fb8d5c380b27b12}\index{Cloud\+Bread/\+Controllers Directory Reference@{Cloud\+Bread/\+Controllers Directory Reference}}
+\subsection*{Files}
+\begin{DoxyCompactItemize}
+\item 
+file \hyperlink{_c_b_add_member_item_purchase_controller_8cs}{C\+B\+Add\+Member\+Item\+Purchase\+Controller.\+cs}
+\begin{DoxyCompactList}\small\item\em Item purchase A\+PI include purchase info. Update Member\+Game\+Infoes, Member\+Items and Member\+Item\+Purchases ~\newline
+Regarding to Member\+Items, select insert or update data ~\newline
+. \end{DoxyCompactList}\item 
+file \hyperlink{_c_b_add_use_member_item_controller_8cs}{C\+B\+Add\+Use\+Member\+Item\+Controller.\+cs}
+\begin{DoxyCompactList}\small\item\em add, update and remove memberitems and update Member\+Game\+Info. ~\newline
+You can implement member item add+status change / use+status change / drop, remove + status change. ~\newline
+First of all, check member inventory and set first param, \char`\"{}\+Insert\+O\+R\+Update\+O\+R\+Delete\char`\"{} branching memberitems. \end{DoxyCompactList}\item 
+file \hyperlink{_c_b_com_sel_gift_depository_controller_8cs}{C\+B\+Com\+Sel\+Gift\+Depository\+Controller.\+cs}
+\begin{DoxyCompactList}\small\item\em Get 1 gift info from Gift\+Depository table ~\newline
+. \end{DoxyCompactList}\item 
+file \hyperlink{_c_b_com_sel_item_list1_controller_8cs}{C\+B\+Com\+Sel\+Item\+List1\+Controller.\+cs}
+\begin{DoxyCompactList}\small\item\em Get 1 item data from Item\+Lists table ~\newline
+. \end{DoxyCompactList}\item 
+file \hyperlink{_c_b_com_sel_member_controller_8cs}{C\+B\+Com\+Sel\+Member\+Controller.\+cs}
+\begin{DoxyCompactList}\small\item\em Get 1 member info from Members table ~\newline
+. \end{DoxyCompactList}\item 
+file \hyperlink{_c_b_com_sel_member_game_infoes_controller_8cs}{C\+B\+Com\+Sel\+Member\+Game\+Infoes\+Controller.\+cs}
+\begin{DoxyCompactList}\small\item\em Common A\+PI for Get member game infoes of member\+ID -\/ return Member\+Game\+Infoes info. ~\newline
+. \end{DoxyCompactList}\item 
+file \hyperlink{_c_b_com_sel_member_item_controller_8cs}{C\+B\+Com\+Sel\+Member\+Item\+Controller.\+cs}
+\begin{DoxyCompactList}\small\item\em Get 1 memberitem info from Member\+Items table ~\newline
+. \end{DoxyCompactList}\item 
+file \hyperlink{_c_b_com_sel_member_item_purchase_controller_8cs}{C\+B\+Com\+Sel\+Member\+Item\+Purchase\+Controller.\+cs}
+\begin{DoxyCompactList}\small\item\em Get 1 member item purchase data info from Member\+Item\+Purchase table ~\newline
+. \end{DoxyCompactList}\item 
+file \hyperlink{_c_b_com_udt_item_list1_controller_8cs}{C\+B\+Com\+Udt\+Item\+List1\+Controller.\+cs}
+\begin{DoxyCompactList}\small\item\em Common A\+PI for a item data update on Item\+Lists table. ~\newline
+Set parameter null or remove json property for no change on column data. \end{DoxyCompactList}\item 
+file \hyperlink{_c_b_c_o_m_udt_member_controller_8cs}{C\+B\+C\+O\+M\+Udt\+Member\+Controller.\+cs}
+\begin{DoxyCompactList}\small\item\em Common A\+PI for a member update on members table. ~\newline
+Set parameter null or remove json property for no change on column data. \end{DoxyCompactList}\item 
+file \hyperlink{_c_b_com_udt_member_game_infoes_controller_8cs}{C\+B\+Com\+Udt\+Member\+Game\+Infoes\+Controller.\+cs}
+\begin{DoxyCompactList}\small\item\em Common A\+PI for a member game info update on Member\+Game\+Infoes table. ~\newline
+Set parameter null or remove json property for no change on column data. \end{DoxyCompactList}\item 
+file \hyperlink{_c_b_com_udt_member_game_info_stages_controller_8cs}{C\+B\+Com\+Udt\+Member\+Game\+Info\+Stages\+Controller.\+cs}
+\begin{DoxyCompactList}\small\item\em Common A\+PI for a game stage update on Member\+Game\+Info\+Stages table. ~\newline
+Set parameter null or remove json property for no change on column data. \end{DoxyCompactList}\item 
+file \hyperlink{_c_b_com_udt_member_item_purchase_controller_8cs}{C\+B\+Com\+Udt\+Member\+Item\+Purchase\+Controller.\+cs}
+\begin{DoxyCompactList}\small\item\em Common A\+PI for update Member\+Item\+Purchase data ~\newline
+. \end{DoxyCompactList}\item 
+file \hyperlink{_c_b_ins_anonymous_reg_member_controller_8cs}{C\+B\+Ins\+Anonymous\+Reg\+Member\+Controller.\+cs}
+\begin{DoxyCompactList}\small\item\em First of all, you must consider using 3rd party(\+Facebook, Microsoft I\+D, Google I\+D and Twitter I\+D) or Active Directory authentication. ~\newline
+Private anonymous member registration controller. ~\newline
+Mobile client P\+O\+ST members and Member\+Game\+Infoes object as json format. ~\newline
+Insert on members and Member\+Game\+Infoes table. ~\newline
+Send member\+ID as guid(or 3rd party provider generated unique value) from client or unique value to fill out of info as blank values. ~\newline
+This A\+PI is identically same with Ins\+Reg\+Member A\+PI. \end{DoxyCompactList}\item 
+file \hyperlink{_c_b_ins_reg_member_controller_8cs}{C\+B\+Ins\+Reg\+Member\+Controller.\+cs}
+\begin{DoxyCompactList}\small\item\em First of all, you must consider using 3rd party(\+Facebook, Microsoft I\+D, Google I\+D and Twitter I\+D) or Active Directory authentication. ~\newline
+Private member registration controller. ~\newline
+Mobile client P\+O\+ST members and Member\+Game\+Infoes object as json format. ~\newline
+Insert on members and Member\+Game\+Infoes table. ~\newline
+Send member\+ID as guid(or 3rd party provider generated unique value) from client or unique value to fill out of info as blank values. ~\newline
+. \end{DoxyCompactList}\item 
+file \hyperlink{_c_b_sel_coupons_controller_8cs}{C\+B\+Sel\+Coupons\+Controller.\+cs}
+\begin{DoxyCompactList}\small\item\em Get coupon list A\+PI of member\+ID ~\newline
+Check member\+ID and date between \char`\"{}\+Coupon\+Duration\+From\char`\"{} and \char`\"{}\+Coupon\+Duration\+To\char`\"{}. \end{DoxyCompactList}\item 
+file \hyperlink{_c_b_sel_game_events_controller_8cs}{C\+B\+Sel\+Game\+Events\+Controller.\+cs}
+\begin{DoxyCompactList}\small\item\em Get remained game events A\+PI for member\+ID. ~\newline
+Date between \char`\"{}\+Game\+Events.\+Event\+Duration\+From\char`\"{} and \char`\"{}\+Game\+Events.\+Event\+Duration\+To\char`\"{} rule. ~\newline
+After finish the game event duration, member could not join the finished event. ~\newline
+. \end{DoxyCompactList}\item 
+file \hyperlink{_c_b_sel_gift_item_to_me_controller_8cs}{C\+B\+Sel\+Gift\+Item\+To\+Me\+Controller.\+cs}
+\begin{DoxyCompactList}\small\item\em Get 1 gift item for member\+ID. ~\newline
+After get gift, call \char`\"{}\+C\+B\+Udt\+Move\+Gift\char`\"{} A\+PI to save gift to member\+ID ~\newline
+. \end{DoxyCompactList}\item 
+file \hyperlink{_c_b_sel_item1_controller_8cs}{C\+B\+Sel\+Item1\+Controller.\+cs}
+\begin{DoxyCompactList}\small\item\em Get 1 item data A\+PI from Item\+Lists table ~\newline
+same with \char`\"{}\+C\+B\+Sel\+Item1\+Controller\char`\"{}. \end{DoxyCompactList}\item 
+file \hyperlink{_c_b_sel_item_list_all_controller_8cs}{C\+B\+Sel\+Item\+List\+All\+Controller.\+cs}
+\begin{DoxyCompactList}\small\item\em Get Item\+Lists table data by paging. ~\newline
+To get all data without paging, set big number \char`\"{}page\+Size\char`\"{} param (max 9223372036854775807). \end{DoxyCompactList}\item 
+file \hyperlink{_c_b_sel_login_i_d_dupe_check_controller_8cs}{C\+B\+Sel\+Login\+I\+D\+Dupe\+Check\+Controller.\+cs}
+\begin{DoxyCompactList}\small\item\em Login id dupe check controller. Mobile client P\+O\+ST member\+ID as json format. ~\newline
+Check memberid duplication in members table. Consider using 3rd party authentication. \end{DoxyCompactList}\item 
+file \hyperlink{_c_b_sel_login_info_controller_8cs}{C\+B\+Sel\+Login\+Info\+Controller.\+cs}
+\begin{DoxyCompactList}\small\item\em Consider using 3rd party authentication. Execute login and select member data. ~\newline
+Update last login info with Device\+ID and I\+P\+Address. \end{DoxyCompactList}\item 
+file \hyperlink{_c_b_sel_member_game_info_stages_controller_8cs}{C\+B\+Sel\+Member\+Game\+Info\+Stages\+Controller.\+cs}
+\begin{DoxyCompactList}\small\item\em Get game stages list from Member\+Game\+Info\+Stages table. ~\newline
+. \end{DoxyCompactList}\item 
+file \hyperlink{_c_b_sel_member_items_controller_8cs}{C\+B\+Sel\+Member\+Items\+Controller.\+cs}
+\begin{DoxyCompactList}\small\item\em Get Member\+Items data by paging. ~\newline
+To get all data without paging, set big number \char`\"{}page\+Size\char`\"{} param (max 9223372036854775807) \end{DoxyCompactList}\item 
+file \hyperlink{_c_b_sel_notices_controller_8cs}{C\+B\+Sel\+Notices\+Controller.\+cs}
+\begin{DoxyCompactList}\small\item\em Get notices by between \char`\"{}\+Notice\+Duration\+From\char`\"{} and \char`\"{}\+Notice\+Duration\+To\char`\"{} rule ~\newline
+after member login, show this notice data for members. \end{DoxyCompactList}\item 
+file \hyperlink{_c_b_sel_send_email_to_member_controller_8cs}{C\+B\+Sel\+Send\+Email\+To\+Member\+Controller.\+cs}
+\begin{DoxyCompactList}\small\item\em Send email to a member. ~\newline
+Mobile client P\+O\+ST member\+ID as json format. ~\newline
+This procedure return email address of member. ~\newline
+ Use \char`\"{}\+Cloud\+Breadlib/\+B\+A\+L/\+Send\+S\+M\+T\+P\+Mail\char`\"{} to send S\+M\+TP email in the code. ~\newline
+. \end{DoxyCompactList}\item 
+file \hyperlink{_c_b_udt_confirmed_email_address_controller_8cs}{C\+B\+Udt\+Confirmed\+Email\+Address\+Controller.\+cs}
+\begin{DoxyCompactList}\small\item\em !not implemented ~\newline
+Confirm email address of member. ~\newline
+Need todo \+: this controller made for email address validate and confirmation. ~\newline
+This controller could be accessed with mobile browser(without appkey authentication). ~\newline
+It has to be seperated in mobile app appkey authentication and provide hashed string for member email address param. ~\newline
+\end{DoxyCompactList}\item 
+file \hyperlink{_c_b_udt_coupon_member_controller_8cs}{C\+B\+Udt\+Coupon\+Member\+Controller.\+cs}
+\begin{DoxyCompactList}\small\item\em Update Member\+Items and Coupon\+Member table by using coupon. ~\newline
+\char`\"{}\+Dupe\+Y\+N\char`\"{} value is set \char`\"{}\+Y\char`\"{}, multiple members can use this coupon. \char`\"{}\+Dupe\+Y\+N\char`\"{} value is set \char`\"{}\+N\char`\"{}, only one member can use it. -\/ set \char`\"{}\+Delete\+Y\+N\char`\"{} to \char`\"{}\+Y\char`\"{}. \end{DoxyCompactList}\item 
+file \hyperlink{_c_b_udt_game_event_member_to_item_controller_8cs}{C\+B\+Udt\+Game\+Event\+Member\+To\+Item\+Controller.\+cs}
+\begin{DoxyCompactList}\small\item\em Save event item to member\textquotesingle{}s Member\+Items table ~\newline
+. \end{DoxyCompactList}\item 
+file \hyperlink{_c_b_udt_member_game_info_stage_controller_8cs}{C\+B\+Udt\+Member\+Game\+Info\+Stage\+Controller.\+cs}
+\begin{DoxyCompactList}\small\item\em update membergameinfo and membergameinfostage ~\newline
+during the game, used for update both membergameinfo and membergameinfostage table ~\newline
+\end{DoxyCompactList}\item 
+file \hyperlink{_c_b_udt_move_gift_controller_8cs}{C\+B\+Udt\+Move\+Gift\+Controller.\+cs}
+\begin{DoxyCompactList}\small\item\em Update Member\+Items and Gift\+Depositories table by using gift. ~\newline
+. \end{DoxyCompactList}\item 
+file \hyperlink{_c_b_udt_sell_item_controller_8cs}{C\+B\+Udt\+Sell\+Item\+Controller.\+cs}
+\begin{DoxyCompactList}\small\item\em Duplicated by C\+B\+Add\+Use\+Member\+Item A\+PI. ~\newline
+. \end{DoxyCompactList}\item 
+file \hyperlink{_c_b_udt_send_gift_controller_8cs}{C\+B\+Udt\+Send\+Gift\+Controller.\+cs}
+\begin{DoxyCompactList}\small\item\em Send item to another member. Update or delete(not actual delete -\/ Delete\+YN flag change) Member\+Items, insert to Gift\+Depositories. ~\newline
+First of all, check member inventory and set first param, \char`\"{}\+Delete\+O\+R\+Update\char`\"{} branching memberitems. \end{DoxyCompactList}\item 
+file \hyperlink{_c_d_udt_return_item_controller_8cs}{C\+D\+Udt\+Return\+Item\+Controller.\+cs}
+\begin{DoxyCompactList}\small\item\em Return purchased item and roll back item and status. Call this A\+PI in unique situation. ~\newline
+Update or delete Member\+Items, update Member\+Item\+Purchases and update Member\+Game\+Infoes. ~\newline
+. \end{DoxyCompactList}\item 
+file \hyperlink{_com_sel_member_game_info_stages_controller_8cs}{Com\+Sel\+Member\+Game\+Info\+Stages\+Controller.\+cs}
+\begin{DoxyCompactList}\small\item\em Common A\+PI for get member game stage for member\+ID -\/ return Member\+Game\+Info\+Stages info. ~\newline
+. \end{DoxyCompactList}\end{DoxyCompactItemize}
