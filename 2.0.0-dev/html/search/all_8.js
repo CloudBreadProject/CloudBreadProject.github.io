@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['homecontroller',['HomeController',['../class_cloud_bread_admin_web_1_1_controllers_1_1_home_controller.html',1,'CloudBreadAdminWeb::Controllers']]]
+  ['homecontroller',['HomeController',['../a00089.html',1,'CloudBreadAdminWeb::Controllers']]]
 ];
