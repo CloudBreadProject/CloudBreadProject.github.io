@@ -1,0 +1,67 @@
+\hypertarget{a00078}{}\section{Logger.\+Logging.\+Logging Class Reference}
+\label{a00078}\index{Logger.\+Logging.\+Logging@{Logger.\+Logging.\+Logging}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{a00008}{C\+B\+A\+T\+S\+Message\+Entity}
+\begin{DoxyCompactList}\small\item\em Entity class for log structure -\/ including A\+TS ~\newline
+. \end{DoxyCompactList}\item 
+class \hyperlink{a00028}{C\+B\+Loggers}
+\begin{DoxyCompactList}\small\item\em Processing \hyperlink{a00217}{Cloud\+Bread} log related task class. ~\newline
+. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{a00078_ab9ee47be781439bd81b8546287e6c48c}{Run\+Log} (\hyperlink{a00028}{C\+B\+Loggers} message)
+\begin{DoxyCompactList}\small\item\em Save log task processor. ~\newline
+. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Logger\+::\+Logging\+::\+Logging@{Logger\+::\+Logging\+::\+Logging}!Run\+Log@{Run\+Log}}
+\index{Run\+Log@{Run\+Log}!Logger\+::\+Logging\+::\+Logging@{Logger\+::\+Logging\+::\+Logging}}
+\subsubsection[{\texorpdfstring{Run\+Log(\+C\+B\+Loggers message)}{RunLog(CBLoggers message)}}]{\setlength{\rightskip}{0pt plus 5cm}static bool Logger.\+Logging.\+Logging.\+Run\+Log (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+B\+Loggers}}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{a00078_ab9ee47be781439bd81b8546287e6c48c}{}\label{a00078_ab9ee47be781439bd81b8546287e6c48c}
+
+
+Save log task processor. ~\newline
+. 
+
+in case of non-\/member triggered job
+
+critical error case, save in A\+TS Cloud\+Bread\+Error\+Log
+
+Save error log on Azure Table Storage
+
+Azure Table Storage connection retry policy
+
+Catch fail to log on database. Most case database connection or login fail issue.
+
+Regarding to web.\+config logger settting, save logs on specific storage
+
+Save log on S\+QL
+
+Database connection retry policy
+
+Save log on Azure Table Storage
+
+Azure Table Storage connection retry policy
+
+Save log on Azure Queue Storage
+
+Azure Queue Storage connection retry policy
+
+must be lower case
+
+todolist -\/ save log on Azure Redis Cache yyyymmdd\+:memberid\+:\+Controller\+:G\+U\+ID
+
+case do nothing
+
+catch save log error here. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/dwkim/\+Documents/\+Git\+Hub/\+Cloud\+Bread/C\+B\+Loggers.\+cs\end{DoxyCompactItemize}

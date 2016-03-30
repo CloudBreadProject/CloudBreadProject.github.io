@@ -1,0 +1,91 @@
+\hypertarget{a00029}{}\section{Cloud\+Bread.\+Controllers.\+C\+B\+Rank\+Controller Class Reference}
+\label{a00029}\index{Cloud\+Bread.\+Controllers.\+C\+B\+Rank\+Controller@{Cloud\+Bread.\+Controllers.\+C\+B\+Rank\+Controller}}
+Inheritance diagram for Cloud\+Bread.\+Controllers.\+C\+B\+Rank\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{a00029}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{a00076}{Input\+Params}
+\item 
+class \hyperlink{a00079}{Member\+Rank\+Number}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00079}{Member\+Rank\+Number} \hyperlink{a00029_a5fab62465936cadf09f5f566e327fdba}{Get} (string sid)
+\begin{DoxyCompactList}\small\item\em Get member rank order number. \end{DoxyCompactList}\item 
+Sorted\+Set\+Entry\mbox{[}$\,$\mbox{]} \hyperlink{a00029_a92ec1412458c02b686672a2cdc031fd6}{G\+ET} (string sid, long start\+Rank, long end\+Rank)
+\begin{DoxyCompactList}\small\item\em Get my rank and then call this method to fetch +-\/10 rank(total 20) rank. \end{DoxyCompactList}\item 
+Sorted\+Set\+Entry\mbox{[}$\,$\mbox{]} \hyperlink{a00029_a50d3b9e65f0ba0dd87c1db7333842474}{G\+ET} (string sid, int countnum)
+\begin{DoxyCompactList}\small\item\em Get top x rankers list order by score desc. \end{DoxyCompactList}\item 
+\hyperlink{a00079}{Member\+Rank\+Number} \hyperlink{a00029_a00001336761da0a7c12b8acca93bd69b}{P\+O\+ST} (\hyperlink{a00076}{Input\+Params} p)
+\begin{DoxyCompactList}\small\item\em Set redis rank by member. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Cloud\+Bread\+::\+Controllers\+::\+C\+B\+Rank\+Controller@{Cloud\+Bread\+::\+Controllers\+::\+C\+B\+Rank\+Controller}!Get@{Get}}
+\index{Get@{Get}!Cloud\+Bread\+::\+Controllers\+::\+C\+B\+Rank\+Controller@{Cloud\+Bread\+::\+Controllers\+::\+C\+B\+Rank\+Controller}}
+\subsubsection[{\texorpdfstring{Get(string sid)}{Get(string sid)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Member\+Rank\+Number} Cloud\+Bread.\+Controllers.\+C\+B\+Rank\+Controller.\+Get (
+\begin{DoxyParamCaption}
+\item[{string}]{sid}
+\end{DoxyParamCaption}
+)}\hypertarget{a00029_a5fab62465936cadf09f5f566e327fdba}{}\label{a00029_a5fab62465936cadf09f5f566e327fdba}
+
+
+Get member rank order number. 
+
+logging purpose
+
+fetch redis value by member sid \index{Cloud\+Bread\+::\+Controllers\+::\+C\+B\+Rank\+Controller@{Cloud\+Bread\+::\+Controllers\+::\+C\+B\+Rank\+Controller}!G\+ET@{G\+ET}}
+\index{G\+ET@{G\+ET}!Cloud\+Bread\+::\+Controllers\+::\+C\+B\+Rank\+Controller@{Cloud\+Bread\+::\+Controllers\+::\+C\+B\+Rank\+Controller}}
+\subsubsection[{\texorpdfstring{G\+E\+T(string sid, long start\+Rank, long end\+Rank)}{GET(string sid, long startRank, long endRank)}}]{\setlength{\rightskip}{0pt plus 5cm}Sorted\+Set\+Entry \mbox{[}$\,$\mbox{]} Cloud\+Bread.\+Controllers.\+C\+B\+Rank\+Controller.\+G\+ET (
+\begin{DoxyParamCaption}
+\item[{string}]{sid, }
+\item[{long}]{start\+Rank, }
+\item[{long}]{end\+Rank}
+\end{DoxyParamCaption}
+)}\hypertarget{a00029_a92ec1412458c02b686672a2cdc031fd6}{}\label{a00029_a92ec1412458c02b686672a2cdc031fd6}
+
+
+Get my rank and then call this method to fetch +-\/10 rank(total 20) rank. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{a00001__todo000010}{Todo}]not a good idea getting sid from usermode \end{DoxyRefDesc}
+logging purpose
+
+fetch redis list by rank range \index{Cloud\+Bread\+::\+Controllers\+::\+C\+B\+Rank\+Controller@{Cloud\+Bread\+::\+Controllers\+::\+C\+B\+Rank\+Controller}!G\+ET@{G\+ET}}
+\index{G\+ET@{G\+ET}!Cloud\+Bread\+::\+Controllers\+::\+C\+B\+Rank\+Controller@{Cloud\+Bread\+::\+Controllers\+::\+C\+B\+Rank\+Controller}}
+\subsubsection[{\texorpdfstring{G\+E\+T(string sid, int countnum)}{GET(string sid, int countnum)}}]{\setlength{\rightskip}{0pt plus 5cm}Sorted\+Set\+Entry \mbox{[}$\,$\mbox{]} Cloud\+Bread.\+Controllers.\+C\+B\+Rank\+Controller.\+G\+ET (
+\begin{DoxyParamCaption}
+\item[{string}]{sid, }
+\item[{int}]{countnum}
+\end{DoxyParamCaption}
+)}\hypertarget{a00029_a50d3b9e65f0ba0dd87c1db7333842474}{}\label{a00029_a50d3b9e65f0ba0dd87c1db7333842474}
+
+
+Get top x rankers list order by score desc. 
+
+logging purpose
+
+fetch redis list by top countnum rankers \index{Cloud\+Bread\+::\+Controllers\+::\+C\+B\+Rank\+Controller@{Cloud\+Bread\+::\+Controllers\+::\+C\+B\+Rank\+Controller}!P\+O\+ST@{P\+O\+ST}}
+\index{P\+O\+ST@{P\+O\+ST}!Cloud\+Bread\+::\+Controllers\+::\+C\+B\+Rank\+Controller@{Cloud\+Bread\+::\+Controllers\+::\+C\+B\+Rank\+Controller}}
+\subsubsection[{\texorpdfstring{P\+O\+S\+T(\+Input\+Params p)}{POST(InputParams p)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Member\+Rank\+Number} Cloud\+Bread.\+Controllers.\+C\+B\+Rank\+Controller.\+P\+O\+ST (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\+Params}}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{a00029_a00001336761da0a7c12b8acca93bd69b}{}\label{a00029_a00001336761da0a7c12b8acca93bd69b}
+
+
+Set redis rank by member. 
+
+logging purpose
+
+set redis point and return 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/dwkim/\+Documents/\+Git\+Hub/\+Cloud\+Bread/\+Controllers/C\+B\+Rank\+Controller.\+cs\end{DoxyCompactItemize}
