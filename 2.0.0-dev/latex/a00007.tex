@@ -1,0 +1,93 @@
+\hypertarget{a00007}{}\section{Cloud\+Bread\+Admin\+Web.\+Controllers.\+Account\+Controller Class Reference}
+\label{a00007}\index{Cloud\+Bread\+Admin\+Web.\+Controllers.\+Account\+Controller@{Cloud\+Bread\+Admin\+Web.\+Controllers.\+Account\+Controller}}
+Inheritance diagram for Cloud\+Bread\+Admin\+Web.\+Controllers.\+Account\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{a00007}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Challenge\+Result}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Account\+Controller} (\hyperlink{a00019}{Application\+User\+Manager} user\+Manager, \hyperlink{a00017}{Application\+Sign\+In\+Manager} sign\+In\+Manager)\hypertarget{a00007_a5985eb6e4a4ae7f4c874b1ccfba84c17}{}\label{a00007_a5985eb6e4a4ae7f4c874b1ccfba84c17}
+
+\item 
+Action\+Result {\bfseries Login} (string return\+Url)\hypertarget{a00007_a485bbeac01f2851f9c01803af4319301}{}\label{a00007_a485bbeac01f2851f9c01803af4319301}
+
+\item 
+async Task$<$ Action\+Result $>$ {\bfseries Login} (\hyperlink{a00131}{Login\+View\+Model} model, string return\+Url)\hypertarget{a00007_a26f5730053d2744a182135c0921104fb}{}\label{a00007_a26f5730053d2744a182135c0921104fb}
+
+\item 
+async Task$<$ Action\+Result $>$ {\bfseries Verify\+Code} (string provider, string return\+Url, bool remember\+Me)\hypertarget{a00007_a3aec70c240231aa01c2382636508129d}{}\label{a00007_a3aec70c240231aa01c2382636508129d}
+
+\item 
+async Task$<$ Action\+Result $>$ {\bfseries Verify\+Code} (\hyperlink{a00192}{Verify\+Code\+View\+Model} model)\hypertarget{a00007_a039a7401f9ec43263c2bc04509244fce}{}\label{a00007_a039a7401f9ec43263c2bc04509244fce}
+
+\item 
+Action\+Result {\bfseries Register} ()\hypertarget{a00007_a432c910f111e765a65da14282a223b23}{}\label{a00007_a432c910f111e765a65da14282a223b23}
+
+\item 
+async Task$<$ Action\+Result $>$ {\bfseries Register} (\hyperlink{a00172}{Register\+View\+Model} model)\hypertarget{a00007_aabe75cc491c52635d865e972992cf1d9}{}\label{a00007_aabe75cc491c52635d865e972992cf1d9}
+
+\item 
+async Task$<$ Action\+Result $>$ {\bfseries Confirm\+Email} (string user\+Id, string code)\hypertarget{a00007_a72e5d1891d8ecfd314e94e5c1b087da1}{}\label{a00007_a72e5d1891d8ecfd314e94e5c1b087da1}
+
+\item 
+Action\+Result {\bfseries Forgot\+Password} ()\hypertarget{a00007_aec786f07cb6404c6c604f8bdb0ebf146}{}\label{a00007_aec786f07cb6404c6c604f8bdb0ebf146}
+
+\item 
+async Task$<$ Action\+Result $>$ {\bfseries Forgot\+Password} (\hyperlink{a00079}{Forgot\+Password\+View\+Model} model)\hypertarget{a00007_a00ae9dd6283bd55904b623116df807d5}{}\label{a00007_a00ae9dd6283bd55904b623116df807d5}
+
+\item 
+Action\+Result {\bfseries Forgot\+Password\+Confirmation} ()\hypertarget{a00007_ae147dc905e1ffa42024972baea8eafe7}{}\label{a00007_ae147dc905e1ffa42024972baea8eafe7}
+
+\item 
+Action\+Result {\bfseries Reset\+Password} (string code)\hypertarget{a00007_a2e497c6b396e8aaaf8ae980c8af75147}{}\label{a00007_a2e497c6b396e8aaaf8ae980c8af75147}
+
+\item 
+async Task$<$ Action\+Result $>$ {\bfseries Reset\+Password} (\hyperlink{a00173}{Reset\+Password\+View\+Model} model)\hypertarget{a00007_aed92611d92bc62645f198738b2559576}{}\label{a00007_aed92611d92bc62645f198738b2559576}
+
+\item 
+Action\+Result {\bfseries Reset\+Password\+Confirmation} ()\hypertarget{a00007_a6ef5f5129df81ea7eedf82cdece7d2d2}{}\label{a00007_a6ef5f5129df81ea7eedf82cdece7d2d2}
+
+\item 
+Action\+Result {\bfseries External\+Login} (string provider, string return\+Url)\hypertarget{a00007_a7635a2faadc86831237f200498f7a419}{}\label{a00007_a7635a2faadc86831237f200498f7a419}
+
+\item 
+async Task$<$ Action\+Result $>$ {\bfseries Send\+Code} (string return\+Url, bool remember\+Me)\hypertarget{a00007_a1a8d7f86ccd6078b9249087d87a6da9a}{}\label{a00007_a1a8d7f86ccd6078b9249087d87a6da9a}
+
+\item 
+async Task$<$ Action\+Result $>$ {\bfseries Send\+Code} (\hyperlink{a00177}{Send\+Code\+View\+Model} model)\hypertarget{a00007_a99dab3cb95c5b5475322f578702ebaa5}{}\label{a00007_a99dab3cb95c5b5475322f578702ebaa5}
+
+\item 
+async Task$<$ Action\+Result $>$ {\bfseries External\+Login\+Callback} (string return\+Url)\hypertarget{a00007_a5760207883e656b3dd51d09e1883fe1a}{}\label{a00007_a5760207883e656b3dd51d09e1883fe1a}
+
+\item 
+async Task$<$ Action\+Result $>$ {\bfseries External\+Login\+Confirmation} (\hyperlink{a00075}{External\+Login\+Confirmation\+View\+Model} model, string return\+Url)\hypertarget{a00007_acdf7512b03daeacb9ab9b8eaf3399ed0}{}\label{a00007_acdf7512b03daeacb9ab9b8eaf3399ed0}
+
+\item 
+Action\+Result {\bfseries Log\+Off} ()\hypertarget{a00007_a5fd1abcf376de86b70209e770cbb5bca}{}\label{a00007_a5fd1abcf376de86b70209e770cbb5bca}
+
+\item 
+Action\+Result {\bfseries External\+Login\+Failure} ()\hypertarget{a00007_a4553fc1091db8e6a23cf05a80beca438}{}\label{a00007_a4553fc1091db8e6a23cf05a80beca438}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00019}{Application\+User\+Manager} {\bfseries User\+Manager}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}\hypertarget{a00007_a6afd7b8108ddbf88909d4d7d85f22e7d}{}\label{a00007_a6afd7b8108ddbf88909d4d7d85f22e7d}
+
+\item 
+\hyperlink{a00017}{Application\+Sign\+In\+Manager} {\bfseries Sign\+In\+Manager}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}\hypertarget{a00007_af6e2b39dcd4e452ffafac3b7b11dfe13}{}\label{a00007_af6e2b39dcd4e452ffafac3b7b11dfe13}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/dwkim/\+Documents/\+Git\+Hub/\+Cloud\+Bread/\+Cloud\+Bread\+Admin\+Web/\+Controllers/Account\+Controller.\+cs\end{DoxyCompactItemize}
