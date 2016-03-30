@@ -1,0 +1,45 @@
+\hypertarget{a00030}{}\section{Cloud\+Bread\+Redis.\+C\+B\+Redis Class Reference}
+\label{a00030}\index{Cloud\+Bread\+Redis.\+C\+B\+Redis@{Cloud\+Bread\+Redis.\+C\+B\+Redis}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{a00030_a78e0461fa8abc3fec82245c2595d91ac}{Set\+Redis\+Key} (string key, string value, int?exp\+Time\+Min)\hypertarget{a00030_a78e0461fa8abc3fec82245c2595d91ac}{}\label{a00030_a78e0461fa8abc3fec82245c2595d91ac}
+
+\begin{DoxyCompactList}\small\item\em save socket auth key in redis db0 \end{DoxyCompactList}\item 
+static string \hyperlink{a00030_a4339caf935cbbc8ac829cd914f9b3fe9}{Get\+Redis\+Key\+Value} (string key)\hypertarget{a00030_a4339caf935cbbc8ac829cd914f9b3fe9}{}\label{a00030_a4339caf935cbbc8ac829cd914f9b3fe9}
+
+\begin{DoxyCompactList}\small\item\em get socket auth key redis data by key value \end{DoxyCompactList}\item 
+static bool \hyperlink{a00030_ab09bc8445fb690da0cdcf9a4983906ed}{Set\+Sorted\+Set\+Rank} (string sid, double point)\hypertarget{a00030_ab09bc8445fb690da0cdcf9a4983906ed}{}\label{a00030_ab09bc8445fb690da0cdcf9a4983906ed}
+
+\begin{DoxyCompactList}\small\item\em Set point value at Redis sorted set. \end{DoxyCompactList}\item 
+static long \hyperlink{a00030_af36763a72f5679bc432a013f39beb944}{Get\+Sorted\+Set\+Rank} (string sid)\hypertarget{a00030_af36763a72f5679bc432a013f39beb944}{}\label{a00030_af36763a72f5679bc432a013f39beb944}
+
+\begin{DoxyCompactList}\small\item\em Get rank value from Redis sorted set. \end{DoxyCompactList}\item 
+static Sorted\+Set\+Entry\mbox{[}$\,$\mbox{]} \hyperlink{a00030_aa3a4020436145c6f99d2b6f5cc5a5056}{Get\+Sorted\+Set\+Rank\+By\+Range} (long start\+Rank, long end\+Rank)\hypertarget{a00030_aa3a4020436145c6f99d2b6f5cc5a5056}{}\label{a00030_aa3a4020436145c6f99d2b6f5cc5a5056}
+
+\begin{DoxyCompactList}\small\item\em Get selected rank range members. Get my rank and then call this method to fetch +-\/10 rank(total 20) rank. \end{DoxyCompactList}\item 
+static Sorted\+Set\+Entry\mbox{[}$\,$\mbox{]} \hyperlink{a00030_a66d68dc112b34f47141bfcac4bf743ea}{Get\+Top\+Sorted\+Set\+Rank} (int count\+Number)\hypertarget{a00030_a66d68dc112b34f47141bfcac4bf743ea}{}\label{a00030_a66d68dc112b34f47141bfcac4bf743ea}
+
+\begin{DoxyCompactList}\small\item\em Get top rank point and info from Redis sorted set. \end{DoxyCompactList}\item 
+static bool \hyperlink{a00030_a8227a017bb2cf72e82c0540aec88f66f}{Fill\+All\+Rank\+From\+DB} ()
+\item 
+static void \hyperlink{a00030_a5b410be6b427222ca5991bf1ed66d3c4}{save\+Redis\+Log} (string key, string message, int?exp\+Time\+Days)\hypertarget{a00030_a5b410be6b427222ca5991bf1ed66d3c4}{}\label{a00030_a5b410be6b427222ca5991bf1ed66d3c4}
+
+\begin{DoxyCompactList}\small\item\em save log to redis db2 and keep 365 days \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Cloud\+Bread\+Redis\+::\+C\+B\+Redis@{Cloud\+Bread\+Redis\+::\+C\+B\+Redis}!Fill\+All\+Rank\+From\+DB@{Fill\+All\+Rank\+From\+DB}}
+\index{Fill\+All\+Rank\+From\+DB@{Fill\+All\+Rank\+From\+DB}!Cloud\+Bread\+Redis\+::\+C\+B\+Redis@{Cloud\+Bread\+Redis\+::\+C\+B\+Redis}}
+\subsubsection[{\texorpdfstring{Fill\+All\+Rank\+From\+D\+B()}{FillAllRankFromDB()}}]{\setlength{\rightskip}{0pt plus 5cm}static bool Cloud\+Bread\+Redis.\+C\+B\+Redis.\+Fill\+All\+Rank\+From\+DB (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{a00030_a8227a017bb2cf72e82c0540aec88f66f}{}\label{a00030_a8227a017bb2cf72e82c0540aec88f66f}
+fill out all rank redis cache from db \begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{a00001__todo000002}{Todo}]\+: huge amount of data processing -\/ split 10,000 or ... dt.\+Rows check. if bigger than 10,000, seperate as another loop dt.\+Rows / 10,000 = mod value + 1 = loop count........... call count query first and then paging processing at query side to prevent DB throttling? \end{DoxyRefDesc}
+make Sorted\+Set\+Entry to fill out 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/dwkim/\+Documents/\+Git\+Hub/\+Cloud\+Bread/\hyperlink{a00118}{C\+B\+Redis.\+cs}\end{DoxyCompactItemize}

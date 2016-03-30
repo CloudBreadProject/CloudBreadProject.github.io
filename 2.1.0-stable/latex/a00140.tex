@@ -1,0 +1,46 @@
+\hypertarget{a00140}{}\section{C\+:/\+Users/dwkim/\+Documents/\+Git\+Hub/\+Cloud\+Bread/\+Controllers/\+C\+B\+Ins\+Reg\+Member\+Controller.cs File Reference}
+\label{a00140}\index{C\+:/\+Users/dwkim/\+Documents/\+Git\+Hub/\+Cloud\+Bread/\+Controllers/\+C\+B\+Ins\+Reg\+Member\+Controller.\+cs@{C\+:/\+Users/dwkim/\+Documents/\+Git\+Hub/\+Cloud\+Bread/\+Controllers/\+C\+B\+Ins\+Reg\+Member\+Controller.\+cs}}
+
+
+First of all, you must consider using 3rd party(\+Facebook, Microsoft I\+D, Google I\+D and Twitter I\+D) or Active Directory authentication. ~\newline
+Private member registration controller. ~\newline
+Mobile client P\+O\+ST members and Member\+Game\+Infoes object as json format. ~\newline
+Insert on members and Member\+Game\+Infoes table. ~\newline
+Send member\+ID as guid(or 3rd party provider generated unique value) from client or unique value to fill out of info as blank values. ~\newline
+.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{a00027}{Cloud\+Bread.\+Controllers.\+C\+B\+Ins\+Reg\+Member\+Controller}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+First of all, you must consider using 3rd party(\+Facebook, Microsoft I\+D, Google I\+D and Twitter I\+D) or Active Directory authentication. ~\newline
+Private member registration controller. ~\newline
+Mobile client P\+O\+ST members and Member\+Game\+Infoes object as json format. ~\newline
+Insert on members and Member\+Game\+Infoes table. ~\newline
+Send member\+ID as guid(or 3rd party provider generated unique value) from client or unique value to fill out of info as blank values. ~\newline
+. 
+
+\begin{DoxyAuthor}{Author}
+Dae Woo Kim 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em members} & and Member\+Game\+Infoes object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string value \char`\"{}2\char`\"{} affected rows count 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+usp\+Ins\+Reg\+Member SP, Behavior\+ID \+: B02 
+\end{DoxySeeAlso}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{a00001__todo000009}{Todo}]apply auth module. change return value to inserted data as json \end{DoxyRefDesc}
